@@ -1,0 +1,56 @@
+.my-masonry-grid {
+    display: flex;
+    margin-left: -20px;
+  }
+  .my-masonry-grid_column {
+    border-left: 20px solid transparent;
+    background-clip: padding-box;
+  }
+  
+  /* Style your items */
+  .my-masonry-grid_column > div { /* change div to reference your elements in <masonry> */
+    /* background: #ddd; */
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .my-masonry-grid_column > div >a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+  }
+  .my-masonry-grid_column > div >a:hover{
+    opacity: 0.6;
+  }
+  .character{
+    width: 300px;
+    height: 400px;
+  }
+  .loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .loader {
+    margin: auto;
+    border: 20px solid #EAF0F6;
+    border-radius: 50%;
+    border-top: 20px solid #000;
+    width: 200px;
+    height: 200px;
+    animation: spinner 4s linear infinite;
+  }
+  
+  @keyframes spinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .about-characters{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .quote-item{
+    padding: 10px;
+  }
